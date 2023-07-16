@@ -1,0 +1,25 @@
+.title {
+   margin: 1em 0 0.5em 0;
+    font-weight: 600;
+    font-family: sans-serif;
+    position: relative;
+    text-shadow: 0 -1px 1px rgba(255, 255, 255, 0.4);
+    font-size: 2rem;
+    line-height: 40px;
+    color: #862121;
+    text-transform: uppercase;
+    border-bottom: 1px solid #b36d6d;
+    text-align: center;
+}
+.App {
+  margin-top: 5%;
+  font-size: 1.7rem;
+  padding-left: 20%;
+  padding-right: 20%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 3vw;
+}
+
+

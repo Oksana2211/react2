@@ -1,0 +1,27 @@
+
+.card {
+  max-width: 25vw;
+  border: 2px solid #770707;
+  font-family: sans-serif;
+  color: #4e4e4e;
+  border-radius: 4vw;
+  margin: 0;
+  position:relative;
+  padding: 0 15% 2%;
+}
+.name {
+text-align: center;
+margin: 1em 0 0.5em 0;
+color: #770707;
+font-weight: normal;
+font-size: 1.9rem;
+line-height: 42px;
+text-transform: uppercase;
+text-shadow: 0 2px white, 0 3px #777;
+}
+.text {
+  font-size: 1.6rem;
+}
+.img{
+  max-width: 20vw;
+}
