@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+Ответы на вопросы
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+1. Что такое props и можно ли использовать props в функциональных компонентах?
 
-### `npm start`
+Пропсы — это данные, доступные только для чтения, которые передаются от родительского компонента дочернему компоненту. Они используются для настройки поведения и внешнего вида компонента. Пропсы похожи на аргументы функции или атрибуты HTML, но они специфичны для компонентов React.
+Пропсы передаются компоненту как объект, и к ним можно получить доступ в компоненте, используя ключевое слово props. Их можно использовать как с классовыми, так и с функциональными компонентами.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+2. Нужно ли выделять в отдельный компонент статью в блоге?
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Компоненты позволяют разделить пользовательский интерфейс на независимые, повторно используемые части и работать с каждой из частей отдельно. Желательно выделять отдельные компоненты, чтобы была возможность импользовать их повторно с разными свойствами.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Можно ли использовать React без JSX?
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+React можно использовать без JSX. Это особенно удобно, когда вы не хотите настраивать транспиляцию в процессе сборки. Но тогда код будет очень нагроможденным и трудночитаемым. Лучше использовать JSX всегда.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Чем отличается JSX от HTML?
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+JSX — это расширение синтаксиса для JavaScript, а HTML — это язык разметки. JSX позволяет включать выражения и функции в синтаксис, а HTML позволяет использовать только статический текст. JSX обычно используется в приложениях React, а HTML используется для создания веб-страниц.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+5. Для чего нам нужны свойства (props) компонентов? 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Благодаря свойствам (props) можно несколько раз использоать один и тот же компонент заменяя в нем данные.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+6. В примере с `CardList` чем можно было бы заменить `<React.Fragment>`?
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+ На пустые скобки <></>.
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+7. Можно ли сказать, что классовые и функциональные компоненты равнозначны по функциональности?
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+С точки зрения React, эти компоненты эквивалентны, но функциональный компонент что упрощают разработку.
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+8. Можно ли полностью описать приложение, используя только функциональные компоненты? 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Да.
+
+
+
+9. Какой командой мы делаем экспорт компонента для возможности его использования в других местах приложения? 
+
+export default ComponentName
+
+
+
+10. Изучите структуру компонент в проекте https://github.com/alisa-tsvetkova/EthereumUI и напишите, какой именно компонент является самым верхним, а какой самым «глубоким»?
+
+Самый верхний - App, самый глубокий - Block.
+
+
+
+11. Какой командой можно сгенерировать разметку/компоненты на основе заранее заданного массива элементов? Приведите пример.
+
+С помощью функции map()
