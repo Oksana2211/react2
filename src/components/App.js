@@ -125,6 +125,7 @@ function App() {
           superpowers={superhero.superpowers}
           url={superhero.url}
           info={superhero.info}
+          key={superhero.name}
         ></Superhero>
       ))}
     </div>
